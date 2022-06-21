@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'good';
+    src: url('../site-extra/fonte/good\ times\ rg.otf');
+}
+
+body {
+    background-color: black;
+}
+
+#planetas {
+    display: block;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    -webkit-background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    background-color:#FFF;
+    background-image: -webkit-linear-gradient(linear,left top,right top,from(#ea8711), to(#d96363));
+    background-image: -webkit-linear-gradient(left,#ff8c00,#ff0000,#0077ff,#5747e9,#00ff55);
+    background-image: -moz-linear-gradient(left,#ff8c00,#ff0000,#0077ff,#5747e9,#00ff55);
+    background-image: -ms-linear-gradient(left,#ff8c00,#ff0000,#0077ff,#5747e9,#00ff55);
+    background-image: -o-linear-gradient(left,#ff8c00,#ff0000,#0077ff,#5747e9,#00ff55);
+
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    font-family: 'good';
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    font-family: 'good';
+}
+
+a {
+    text-decoration: none;
+}
+
+p:hover {
+    -webkit-background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    background-color:#FFF;
+    background-image: -webkit-linear-gradient(linear,left top,right top,from(#ea8711), to(#d96363));
+    background-image: -webkit-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
+    background-image: -moz-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
+    background-image: -ms-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
+    background-image: -o-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
+}
+
+img {
+    animation: girar 30s infinite linear;
+  }
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg)
+    }
+    50% {
+      transform: rotate(180deg)
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+
+  .mercuri {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.venus {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.terra {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.marte {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.Jupiter {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.saturno {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.urano {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.netuno {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+    
+    body {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #planetas {
+        padding: 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    .mercuri {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+    
+    .venus {
+        width: 200px;
+        margin-bottom: 10px;
+        margin-left: 90px;
+    }
+    
+    .terra {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    
+    .marte {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    
+    .Jupiter {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    
+    .saturno {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    
+    .urano {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    
+    .netuno {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    body {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #planetas {
+        padding-left: 100px;
+    }
+
+    .mercuri {
+        width: 200px;
+        margin-bottom: 20px;
+
+    }
+    
+    .venus {
+        width: 200px;
+        margin-bottom: 10px;
+
+    }
+    
+    .terra {
+        width: 200px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .marte {
+        width: 200px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .Jupiter {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .saturno {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .urano {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .netuno {
+        width: 200px;
+        margin-bottom: 20px;
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    body {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 55px;
+        margin-left: 50px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    #planetas {
+        padding-left: 150px;
+    }
+
+    .mercuri {
+        width: 350px;
+        margin-bottom: 20px;
+
+    }
+    
+    .venus {
+        width: 350px;
+        margin-bottom: 10px;
+
+    }
+    
+    .terra {
+        width: 350px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .marte {
+        width: 350px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .Jupiter {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .saturno {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .urano {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .netuno {
+        width: 350px;
+        margin-bottom: 20px;
+        
+    }
+}

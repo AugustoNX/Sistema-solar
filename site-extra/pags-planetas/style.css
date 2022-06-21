@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'good';
+    src: url('../fonte/good\ times\ rg.otf');
+  }
+  
+  body {
+      /* background-image: url(../img/fundo2.jfif);  */
+      background-color: black;
+      background-size: cover;
+  }
+  
+  #img {
+      text-align: center;
+  }
+  
+  h1{
+    color: white;
+    font-size: 55px;
+    font-family: 'good';
+  }
+  
+  #texto {
+    color: white;
+    padding: 60px 80px 70px 80px;
+    font-size: 20px;
+  }
+  
+  #p {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  summary {
+    font-size: 30px;
+    color: rgb(207, 207, 207);
+  }
+  
+  #details-um {
+    margin-top: 10px;
+  }
+  
+  .dentro-details {
+    padding: 0 40px 0 40px;
+    color: rgb(207, 207, 207);
+    text-align: center;
+  }
+  
+  #planeta {
+      animation: girar 20s infinite;
+      animation-direction: alternate;
+  }
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg)
+    }
+    50% {
+      transform: rotate(180deg)
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+  
+  .slides {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+  }
+  
+  .slides > img {
+    scroll-snap-align: start;
+  }
+  
+  .slides img {
+    border-radius: 10px;
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 0px) and (max-width: 480px) {
+  
+    #planeta {
+      width: 350px;
+    }
+  
+    p {
+      font-size: 25px;
+    }
+  
+    .slides img {
+      width: 400px;
+    }
+  
+    .slides::-webkit-scrollbar {
+      display: none;
+    }
+  
+  }
+  
